@@ -4,22 +4,97 @@ body{
 }
 
 .menubar{
-    background-color: grey;
-    overflow:hidden;
+    background-color: #a8a8a8;
+    /*color:rgb(255, 254, 254);*/
+    border-color: rgba(0, 0, 0, 0.315);
+    height: 20px;
+    border-bottom: 2px solid rgb(92, 92, 92);
 }
 
+
 .menubar button{
+    background-color:#a8a8a8 ;
+    height:20px;
     float:left;
     display: block;
-    color: grey;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    cursor:pointer;
+    color: black;
+    text-align: justify;
+    padding: 1px 4px;
+    font-size: 12px;
+    border: 1px rgb(126, 126, 126);
+
+}
+.menubar button:active{
+    background-color:#a8a8a8;
+    border-bottom: 1px solid white;
+    border-right:1px solid white;
+    border-top: 1px solid rgb(80, 80, 80);
+    border-left: 1px solid rgb(80, 80, 80);
+
 }
 
 .menubar button:hover{
-    background-color: #550;
+    background-color: #a8a8a8;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    border-right: 1px solid rgb(80, 80, 80);
+    border-bottom: 1px solid rgb(80, 80, 80);
+    
+}
+
+.sidebar{
+    background-color: #a8a8a8;
+    height:520px;
+    width:60px;
+    border-right:1px solid rgb(92, 92, 92);
+    align-content: center;
+}
+.toolbar{
+    background-color: #a8a8a8;
+    height:210px;
+    width:56px;
+    display:grid;
+    margin-left: 4px;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:0;
+    row-gap: 0;
+}
+
+.toolbar button{
+    background-color: #a8a8a8;
+    height:26px;
+    width:26px;
+    padding:0 0;
+    z-index: 1;
+    border-top: 1px solid white;
+    border-left:1px solid white;
+    border-right: 1px solid rgb(80, 80, 80);
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.optionWindow{
+    background-color: #a8a8a8;
+    margin-left: 8px;
+    margin-top: 3px;
+    height:60px;
+    width:45px;
+    border:none;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    border-right:1px solid rgb(235, 234, 234);
+    border-top: 1px solid rgb(80, 80, 80);
+    border-left: 1px solid rgb(80, 80, 80);
+} 
+.optionWindow button{
+    background-color: #a8a8a8;
+    height: 12px;
+    width: 45px;
+    border:none;
+    padding:0;
+    margin:0;
+    display: block;
+
+}
+.optionWindow button:hover{
+    background-color: rgb(7, 7, 124);
+
 }
