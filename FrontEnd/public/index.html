@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="background">
+<div class="container-1">
     <div class="menubar">
         <button id="fileButton">File</button>
         <button id="editButton">Edit</button>
@@ -17,6 +17,9 @@
         <button id="colorsButton">Colors</button>
         <button id="helpButton">Help</button>
     </div>
+</div>
+    <div class="container-2">
+        <canvas id="ascanvas" ></canvas>
     <div class="sidebar">
         <div class="toolbar" >
             <button id="polygon lasso"  ></button>
@@ -45,8 +48,8 @@
 
         </div>
     </div>
-    
-    <canvas id="ascanvas" ></canvas>
+    </div>
+    <div class="container-3">
     <div class="pallete-bar">
         <div class="pallete-preview">
             <div id="selected-Color"></div>
@@ -84,12 +87,14 @@
             </div>
         </div>
     </div>
+</div>
+    <div class="container-4">
     <div class="footer">
         <div class="footer-note">For Help, click Help Topics on the Help Menu</div>
         <div id="coordinate_value" class="coordinates"></div>
         <div class="extra"></div>
     </div>
-
+</div>
     <script src="/FrontEnd/src/scripts/main.js"></script>
 
 
