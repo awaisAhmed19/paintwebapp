@@ -177,7 +177,7 @@ canvas{
     bottom: 1px;
     left: 3px;
     height:18px;
-    width: 100%;
+    width: 1120px;
     float:left;
     text-align: justify;
     display: flex;
@@ -186,7 +186,7 @@ canvas{
     border-top: 1px solid rgb(88, 88, 88);
     border-left: 1px solid rgb(88, 88, 88);
     border-bottom:1px solid #ffffff;
-    border-right:1px solid #ffffff;
+    border-right: 1px solid #ffffff;
 }
 
 .coordinates{
