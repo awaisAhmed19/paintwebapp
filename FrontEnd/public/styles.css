@@ -41,14 +41,12 @@ body {
     font-size: 13px;
 }
 
-.toggle-content-container{
+/* Common styles for both toggle content containers */
+.toggle-content-container,
+.edit-toggle-content-container {
     background-color: var(--main-color);
-    width:20vw;
-    height: 48vh;
-    display: flex;
     position: absolute;
     top: 20px;
-    left: 0;
     z-index: 999;
     column-fill: auto;
     margin: 0;
@@ -57,33 +55,49 @@ body {
     border-left: 1px solid var(--borderlight);
     border-right: 1px solid var(--borderdark);
     border-bottom: 1px solid var(--borderdark);
-
 }
+
+/* Specific styles for .toggle-content-container */
+.toggle-content-container {
+    width: 275px;
+    height: 310px;
+    left: 0;
+}
+
+/* Specific styles for .edit-toggle-content-container */
+.edit-toggle-content-container {
+    width: 192px;
+    height: 200px;
+    left: 31px;
+}
+
+/* Common styles for hr on hover */
 hr:hover {
     background-color: var(--main-color);
 }
 
-
- .toggle-content .menu-row:hover{
+/* Common styles for .menu-row on hover */
+.toggle-content .menu-row:hover,
+.edit-toggle-content .menu-row:hover {
     background-color: rgb(12, 12, 99);
     color: white;
 }
 
-
-.toggle-content {
-    margin:2px;
-    font-size: 14px;
+/* Common styles for .toggle-content and .edit-toggle-content */
+.toggle-content,
+.edit-toggle-content {
+    margin: 2px;
+    width: 270px;
+    font-size: 12px;
     border-collapse: collapse;
-    width: 25vw;
-    height: 45vh;
     align-items: center;
-        
 }
 
-.toogle-content td{
-    height: 14px;
+/* Common styles for .toggle-content td and .edit-toggle-content td */
+.toggle-content td,
+.edit-toggle-content td {
+    height: 12px;
 }
-
 
 
 

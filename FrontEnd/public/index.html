@@ -17,7 +17,7 @@
         <button id="colorsButton">Colors</button>
         <button id="helpButton">Help</button>
     </div>
-    <div class="toggle-content-container" id="file_toggle">
+    <div class="toggle-content-container" id="file_toggle" style="display: none;">
         <table class="toggle-content">
             <tr class="menu-row" id="New_file" >
                 <td class="menu-item-label">New</td>
@@ -89,6 +89,64 @@
             </tr>
         </table>
     </div>
+</div>
+<div class="edit-toggle-content-container" id="edit_toggle" style="display: none;">
+    <table class="edit-toggle-content">
+        <tr class="menu-row" id="Undo" >
+            <td class="menu-item-label">undo</td>
+            <td class="menu-item-shortcut">Ctrl+Z</td>  
+        </tr>
+        <tr class="menu-row" id="Repeat" >
+            <td class="menu-item-label">Repeat</td>
+            <td class="menu-item-shortcut">F4</td>
+        </tr>
+        <tr class="menu-row" id="History" >
+            <td class="menu-item-label">History</td>
+            <td class="menu-item-shortcut">Ctrl+Shift+Y</td>
+        </tr>
+        <tr class="div-line">
+            <td colspan="4">
+                <hr class="menuhr">
+            </td>
+        </tr>
+        <tr class="menu-row" id="Cut" >
+            <td class="menu-item-label">Cut</td>
+            <td class="menu-item-shortcut"></td>
+        </tr>
+        
+        <tr class="menu-row" id="Copy" >
+            <td class="menu-item-label">Copy</td>
+            <td class="menu-item-shortcut"></td>
+        </tr>
+        <tr class="menu-row" id="Paste" >
+            <td class="menu-item-label">Paste</td>
+            <td class="menu-item-shortcut"></td>
+        </tr>
+       
+        <tr class="menu-row" id="Clear-Selection" >
+            <td class="menu-item-label">Clear Selection</td>
+            <td class="menu-item-shortcut">Del</td>
+        </tr>
+       
+        <tr class="menu-row" id="Select-All" >
+            <td class="menu-item-label">Select All</td>
+            <td class="menu-item-shortcut">Ctrl+A</td>
+        </tr>
+        <tr class="div-line">
+            <td colspan="4">
+                <hr class="menuhr">
+            </td>
+        </tr>
+        <tr class="menu-row" id="Copy-To" >
+            <td class="menu-item-label">Copy to</td>
+            <td class="menu-item-shortcut"></td>
+        </tr>
+        <tr class="menu-row" id="Paste-from" >
+            <td class="menu-item-label">Paste-from</td>
+            <td class="menu-item-shortcut"></td>
+        </tr>
+    </table>
+</div>
 </div>
     <div class="container-2">
         <canvas id="ascanvas" ></canvas>
