@@ -43,25 +43,28 @@ body {
 
 /* Common styles for both toggle content containers */
 .toggle-content-container,
-.edit-toggle-content-container {
+.edit-toggle-content-container,
+.view-toggle-content-container,
+.layers-toggle-content-container,
+.image-toggle-content-container,
+.colors-toggle-content-container {
     background-color: var(--main-color);
     position: absolute;
     top: 20px;
     z-index: 999;
     column-fill: auto;
     margin: 0;
-    border: none;
     border-top: 1px solid var(--borderlight);
     border-left: 1px solid var(--borderlight);
     border-right: 1px solid var(--borderdark);
     border-bottom: 1px solid var(--borderdark);
 }
-
-/* Specific styles for .toggle-content-container */
-.toggle-content-container {
-    width: 275px;
-    height: 310px;
-    left: 0;
+.tickspace,.secondary-dialog-arrow{
+    background-color: var(--main-color);
+    height: 12px;
+    width: 18px;
+    margin: 0;
+    border: none;
 }
 
 /* Specific styles for .edit-toggle-content-container */
@@ -70,6 +73,22 @@ body {
     height: 200px;
     left: 31px;
 }
+.view-toggle-content-container {
+    width: 150px;
+    height: 156px;
+    left: 60px;
+}
+.image-toggle-content-container {
+    top: 18px;
+    width: 165px;
+    height: 114px;
+    margin: 2px;
+}
+.colors-toggle-content-container{
+    width: 130px;
+    height: 60px;
+    left: 130px;
+}
 
 /* Common styles for hr on hover */
 hr:hover {
@@ -77,26 +96,31 @@ hr:hover {
 }
 
 /* Common styles for .menu-row on hover */
-.toggle-content .menu-row:hover,
-.edit-toggle-content .menu-row:hover {
+.menu-row:hover {
     background-color: rgb(12, 12, 99);
     color: white;
 }
 
+
 /* Common styles for .toggle-content and .edit-toggle-content */
 .toggle-content,
-.edit-toggle-content {
+.edit-toggle-content,
+.view-toggle-content,
+.layers-toggle-content,
+.image-toggle-content,
+.colors-toggle-content{
     margin: 2px;
-    width: 270px;
     font-size: 12px;
     border-collapse: collapse;
     align-items: center;
 }
-
 /* Common styles for .toggle-content td and .edit-toggle-content td */
 .toggle-content td,
-.edit-toggle-content td {
-    height: 12px;
+.edit-toggle-content td,
+.view-toggle-content td,
+.layers-toggle-content td
+.colors-toggle-content td{
+    height: 10px;
 }
 
 

@@ -17,23 +17,31 @@
         <button id="colorsButton">Colors</button>
         <button id="helpButton">Help</button>
     </div>
-    <div class="toggle-content-container" id="file_toggle" style="display: none;">
-        <table class="toggle-content">
+    <div class="toggle-content-container" id="file_toggle" style="display: none; width: 275px;height: 310px;left: 0;">
+        <table class="toggle-content" style="width: 275px;height: 305px;left: 0; ">
             <tr class="menu-row" id="New_file" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">New</td>
-                <td class="menu-item-shortcut">Ctrl+Alt+N</td>  
+                <td class="menu-item-shortcut">Ctrl+Alt+N</td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="menu-row" id="Open_file" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Open</td>
                 <td class="menu-item-shortcut">Ctrl+Alt+O</td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="menu-row" id="Save_file" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Save</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
-            <tr class="menu-row" id="Saveas_file" >
+            <tr class="menu-row" id="Saveas_file">
+                <td class="tickspace"></td>
                 <td class="menu-item-label">SaveAs</td>
                 <td class="menu-item-shortcut">Ctrl+S</td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="div-line">
                 <td colspan="4">
@@ -41,12 +49,16 @@
                 </td>
             </tr>
             <tr class="menu-row" id="Load_from_URL" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Load from URL</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="menu-row" id="Upload_to_Imgur" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Upload to Imgur</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="div-line">
                 <td colspan="4">
@@ -54,8 +66,10 @@
                 </td>
             </tr>
             <tr class="menu-row" id="Manage_storage" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Manage storage</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="div-line">
                 <td colspan="4">
@@ -63,12 +77,16 @@
                 </td>
             </tr>
             <tr class="menu-row" id="Set_as_WallpaperT" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Set as wallpaper(Tiled)</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="menu-row" id="Set_as_WallpaperC" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Set as Wallpaper(Centered)</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
             <tr class="div-line">
                 <td colspan="4">
@@ -76,78 +94,298 @@
                 </td>
             </tr>
             <tr class="menu-row" id="Recent_files" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Recent Files</td>
                 <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
             <tr class="div-line">
                     <td colspan="4">
                         <hr class="menuhr">
                     </td>
             </tr>
             <tr class="menu-row" id="Exit" >
+                <td class="tickspace"></td>
                 <td class="menu-item-label">Exit</td>
                 <td class="menu-item-shortcut">Ctrl+Q</td>
+                <td class="secondary-dialog-arrow"></td>  
             </tr>
         </table>
     </div>
+    <div class="edit-toggle-content-container" id="edit_toggle" style="display: none;">
+        <table class="edit-toggle-content" style="width: 192px; height: 195px; font-size: 11px; ">
+            <tr class="menu-row" id="Undo" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Undo</td>
+                <td class="menu-item-shortcut">Ctrl+Z</td>  
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="Repeat" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Repeat</td>
+                <td class="menu-item-shortcut">F4</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="History" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">History</td>
+                <td class="menu-item-shortcut">Ctrl+Shift+Y</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="div-line">
+                <td colspan="4">
+                    <hr class="menuhr">
+                </td>
+            </tr>
+            <tr class="menu-row" id="Cut" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Cut</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            
+            <tr class="menu-row" id="Copy" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Copy</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="Paste" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Paste</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+           
+            <tr class="menu-row" id="Clear-Selection" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Clear Selection</td>
+                <td class="menu-item-shortcut">Del</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+           
+            <tr class="menu-row" id="Select-All" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Select All</td>
+                <td class="menu-item-shortcut">Ctrl+A</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="div-line">
+                <td colspan="4">
+                    <hr class="menuhr">
+                </td>
+            </tr>
+            <tr class="menu-row" id="Copy-To" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Copy to</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="Paste-from" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Paste-from</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+        </table>
+        </div>
+    <div class="view-toggle-content-container" id="view_toggle" style="display: none;">
+        <table class="view-toggle-content" style="width: 192px; height: 150px; font-size: 11px; ">
+            <tr class="menu-row" id="Tool-Box" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Tool Box</td>
+                <td class="menu-item-shortcut"></td>  
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="Color-Box" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Color-Box</td>
+                <td class="menu-item-shortcut">Ctrl+L</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="Status-Bar" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Status Bar</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="Text-Toolbar" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Text Toolbar</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="div-line">
+                <td colspan="4">
+                    <hr class="menuhr">
+                </td>
+            </tr>
+            
+            
+            <tr class="menu-row" id="Zoom" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Zoom</td>
+                <td class="menu-item-shortcut"></td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+            <tr class="menu-row" id="View-Bitmap" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">View Bitmap</td>
+                <td class="menu-item-shortcut">Ctrl+F</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+           
+            <tr class="menu-row" id="FullScreen" >
+                <td class="tickspace"></td>
+                <td class="menu-item-label">Full Screen</td>
+                <td class="menu-item-shortcut">F11</td>
+                <td class="secondary-dialog-arrow"></td>  
+            </tr>
+        </table>
+        </div>
+    <div class="layers-toggle-content-container" id="layers_toggle" style="display: none; left: 100px;">
+            <table class="layers-toggle-content" style="width: 192px; height: 200px; font-size: 11px;">
+                <tr class="menu-row" id="Properties">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Properties..</td>
+                    <td class="menu-item-shortcut">F2</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Visible">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Visible</td>
+                    <td class="menu-item-shortcut">Shift+X</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Lock-Layers">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Lock Layers</td>
+                    <td class="menu-item-shortcut"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+               
+                <tr class="menu-row" id="Open-Group">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Open Group</td>
+                    <td class="menu-item-shortcut">Shift+E</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="div-line">
+                    <td colspan="4">
+                        <hr class="menuhr">
+                    </td>
+                </tr>
+                <tr class="menu-row" id="New-Layer">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">New</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Delete-Layer">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Delete Layer</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                
+                <tr class="menu-row" id="Convert-To">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Convert To..</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="div-line">
+                    <td colspan="4">
+                        <hr class="menuhr">
+                    </td>
+                </tr>
+                <tr class="menu-row" id="Duplicate">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Duplicate</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Merge-Down">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Merge Down</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Flatten">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Flatten</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Flatten-Layer">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Flatten Layer</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+            </table>
+        </div>
+    <div class="image-toggle-content-container" id="image_toggle" style="display: none; left: 134px;">
+            <table class="image-toggle-content" style="width: 153px; height: 110px; font-size: 11px;">
+                <tr class="menu-row" id="Flip_Rotate">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Flip/Rotate</td>
+                    <td class="menu-item-shortcut">Ctrl+Alt+R</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Stretch_Skew">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Stretch/Skew</td>
+                    <td class="menu-item-shortcut">Ctrl+Alt+W</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Invert_Color">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Invert Color</td>
+                    <td class="menu-item-shortcut">Ctrl+I</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+               
+                <tr class="menu-row" id="Attributes">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Attributes..</td>
+                    <td class="menu-item-shortcut">Ctrl+E</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Clear_Image">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Clear Image</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Draw_Opaque">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Draw Opaque</td>
+                    <td class="menu-item-options"></td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+            </table>
+        </div>
+    <div class="colors-toggle-content-container" id="colors_toggle" style="display: flex; left: 180px;">
+            <table class="colors-toggle-content" style="width: 128px; height: 58px; font-size: 11px;">
+                <tr class="menu-row" id="Edit_Colors">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Edit Colors..</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Get_Colors">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Get Colors</td>
+                    <td class="secondary-dialog-arrow"></td>
+                </tr>
+                <tr class="menu-row" id="Save_Colors">
+                    <td class="tickspace"></td>
+                    <td class="menu-item-label">Save Color</td>
+                    <td class="secondary-dialog-arrow" style="align-items: center;">Ctrl+I</td>
+                </tr>
+            </table>
+        </div>
 </div>
-<div class="edit-toggle-content-container" id="edit_toggle" style="display: none;">
-    <table class="edit-toggle-content">
-        <tr class="menu-row" id="Undo" >
-            <td class="menu-item-label">undo</td>
-            <td class="menu-item-shortcut">Ctrl+Z</td>  
-        </tr>
-        <tr class="menu-row" id="Repeat" >
-            <td class="menu-item-label">Repeat</td>
-            <td class="menu-item-shortcut">F4</td>
-        </tr>
-        <tr class="menu-row" id="History" >
-            <td class="menu-item-label">History</td>
-            <td class="menu-item-shortcut">Ctrl+Shift+Y</td>
-        </tr>
-        <tr class="div-line">
-            <td colspan="4">
-                <hr class="menuhr">
-            </td>
-        </tr>
-        <tr class="menu-row" id="Cut" >
-            <td class="menu-item-label">Cut</td>
-            <td class="menu-item-shortcut"></td>
-        </tr>
-        
-        <tr class="menu-row" id="Copy" >
-            <td class="menu-item-label">Copy</td>
-            <td class="menu-item-shortcut"></td>
-        </tr>
-        <tr class="menu-row" id="Paste" >
-            <td class="menu-item-label">Paste</td>
-            <td class="menu-item-shortcut"></td>
-        </tr>
-       
-        <tr class="menu-row" id="Clear-Selection" >
-            <td class="menu-item-label">Clear Selection</td>
-            <td class="menu-item-shortcut">Del</td>
-        </tr>
-       
-        <tr class="menu-row" id="Select-All" >
-            <td class="menu-item-label">Select All</td>
-            <td class="menu-item-shortcut">Ctrl+A</td>
-        </tr>
-        <tr class="div-line">
-            <td colspan="4">
-                <hr class="menuhr">
-            </td>
-        </tr>
-        <tr class="menu-row" id="Copy-To" >
-            <td class="menu-item-label">Copy to</td>
-            <td class="menu-item-shortcut"></td>
-        </tr>
-        <tr class="menu-row" id="Paste-from" >
-            <td class="menu-item-label">Paste-from</td>
-            <td class="menu-item-shortcut"></td>
-        </tr>
-    </table>
-</div>
-</div>
+    
     <div class="container-2">
         <canvas id="ascanvas" ></canvas>
     
