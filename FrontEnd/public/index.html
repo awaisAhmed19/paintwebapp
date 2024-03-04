@@ -9,13 +9,13 @@
 <body>
 <div class="container-1">
     <div class="menubar">
-        <button id="fileButton">File</button>
-        <button id="editButton">Edit</button>
-        <button id="viewButton">View</button>
-        <button id="layerButton">Layer</button>
-        <button id="imageButton">Image</button>
-        <button id="colorsButton">Colors</button>
-        <button id="helpButton">Help</button>
+        <button id="fileButton" onclick="toggleDropdown('toggle-content-container')">File</button>
+        <button id="editButton"  onclick="toggleDropdown('edit-toggle-content-container')">Edit</button>
+        <button id="viewButton"  onclick="toggleDropdown('view-toggle-content-container')">View</button>
+        <button id="layerButton" onclick="toggleDropdown('layers-toggle-content-container')">Layer</button>
+        <button id="imageButton" onclick="toggleDropdown('image-toggle-content-container')">Image</button>
+        <button id="colorsButton" onclick="toggleDropdown('colors-toggle-content-container')">Colors</button>
+        <button id="helpButton" onclick="toggleDropdown('toggle-content-container')">Help</button>
     </div>
     <div class="toggle-content-container" id="file_toggle" style="display: none; width: 275px;height: 310px;left: 0;">
         <table class="toggle-content" style="width: 275px;height: 305px;left: 0; ">
@@ -365,8 +365,8 @@
                 </tr>
             </table>
         </div>
-    <div class="colors-toggle-content-container" id="colors_toggle" style="display: flex; left: 180px;">
-            <table class="colors-toggle-content" style="width: 128px; height: 58px; font-size: 11px;">
+    <div class="colors-toggle-content-container" id="colors_toggle" style="display: none; left: 180px;">
+            <table class="colors-toggle-content" style="width: 128px; height: 56px; font-size: 11px;">
                 <tr class="menu-row" id="Edit_Colors">
                     <td class="tickspace"></td>
                     <td class="menu-item-label">Edit Colors..</td>

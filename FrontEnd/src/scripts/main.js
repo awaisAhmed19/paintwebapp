@@ -1,50 +1,48 @@
-const button_config={
-    'fileButton':{
-        'functionName': open_file_button,
-        'cssClass':'file-button-toggle',
-        'htmlContent':'<p>file_button_toggle</p>',
-    },
-    'editButton':{
-        'functionName': open_edit_button,
-        'cssClass':'edit-button-toggle',
-        'htmlContent':'edit_button_toggle',    
-    },
-    'viewButton':{
-        'functionName': open_view_button,
-        'cssClass':'view-button-toggle',
-        'htmlContent':'view_button_toggle',
-    },
-    'layerButton':{
-        'functionName': open_layer_button,
-        'cssClass':'layer-button-toggle',
-        'htmlContent':'layer_button_toggle',
-    
-    },
-    'imageButton':{
-        'functionName': open_image_button,
-        'cssClass':'image-button-toggle',
-        'htmlContent':'image_button_toggle',
-    
-    },
-    'colorButton':{
-        'functionName': open_color_button,
-        'cssClass':'color-button-toggle',
-        'htmlContent':'color_button_toggle',
-    
-    },
-    'helpButton':{
-        'functionName': open_help_button,
-        'cssClass':'help-button-toggle',
-        'htmlContent':'help_button_toggle',
-    },
-};
+const menubarButtons = document.querySelectorAll('.dropdown-button');
+const dropdownContainer = document.getElementById('toggle-content-container');
 
-function openbutton(button_id){
-    const config=button_config[button_id];
+menubarButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+        // Remove 'active' class from all buttons
+        menubarButtons.forEach((btn) => btn.classList.remove('active'));
 
-    if(config){
-        const { functionName, cssClass, htmlContent}=config;
+        // Add 'active' class to the clicked button
+        this.classList.add('active');
 
-        functionName(cssClass ,htmlContent);
+        // Toggle the corresponding dropdown
+        const dropdownId = this.getAttribute('data-dropdown');
+        toggleDropdown(dropdownId);
+    });
+});
+
+dropdownContainer.addEventListener('mouseover', function (event) {
+    // Check if the mouse is over a dropdown button
+    const targetButton = event.target.closest('.dropdown-button');
+    if (targetButton) {
+        // Add 'active' class to the hovered button
+        targetButton.classList.add('active');
+
+        // Toggle the corresponding dropdown
+        const dropdownId = targetButton.getAttribute('data-dropdown');
+        toggleDropdown(dropdownId);
+    }
+});
+
+dropdownContainer.addEventListener('mouseout', function (event) {
+    // Remove 'active' class from all buttons when mouse leaves the container
+    menubarButtons.forEach((button) => button.classList.remove('active'));
+});
+
+function toggleDropdown(classname) {
+    // Hide all dropdowns
+    const allDropdowns = document.querySelectorAll('.toggle-content');
+    allDropdowns.forEach((dropdown) => {
+        dropdown.style.display = 'none';
+    });
+
+    // Show the targeted dropdown
+    const dropdown = document.getElementById(classname);
+    if (dropdown) {
+        dropdown.style.display = 'flex';
     }
 }
