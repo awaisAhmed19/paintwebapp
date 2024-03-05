@@ -141,6 +141,13 @@ hr:hover {
     border-left: 1px solid var(--borderdark);
     border-bottom: 1px solid var(--borderlight);
 }
+.menubar button:focus{
+    background-color: var(--main-color);
+    border-top: 1px solid var(--borderdark);
+    border-right: 1px solid var(--borderlight);
+    border-left: 1px solid var(--borderdark);
+    border-bottom: 1px solid var(--borderlight);
+}
 
 .container-2{
     margin: 0;

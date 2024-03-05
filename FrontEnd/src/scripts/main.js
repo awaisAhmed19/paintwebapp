@@ -1,14 +1,14 @@
-function toggleDropdown(classname) {
-    const dropdown = document.getElementsByClassName(classname);
+const menubutton=document.querySelector('.menubar-btn');
 
-    // Check if elements with the specified class name exist
-    if (dropdown.length > 0) {
-        // Convert the HTMLCollection to an array using Array.from
-        Array.from(dropdown).forEach((element) => {
-            // Toggle the display style
-            element.style.display = (element.style.display === "none" || element.style.display === "") ? "flex" : "none";
-        });
-    } else {
-        console.error(`No elements found with class '${classname}'`);
-    }
-}
+menubutton.addEventListener('click',()=>{
+    menubutton.classList.add(".menubar button:focus")
+});
+
+
+const menubtnList=document.querySelectorAll('.menubar-btn');
+menubtnList.forEach((menubtn)=>{
+    menubtn.addEventListener('click',()=>{
+        document.querySelector('.menubar button:focus')?.classList.remove('.menubar button:focus');
+        menubtn.classList.add('.menubar button:focus');
+    });
+});

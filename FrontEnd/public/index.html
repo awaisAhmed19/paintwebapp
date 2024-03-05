@@ -9,13 +9,13 @@
 <body>
 <div class="container-1">
     <div class="menubar">
-        <button id="fileButton" onclick="toggleDropdown('toggle-content-container')">File</button>
-        <button id="editButton"  onclick="toggleDropdown('edit-toggle-content-container')">Edit</button>
-        <button id="viewButton"  onclick="toggleDropdown('view-toggle-content-container')">View</button>
-        <button id="layerButton" onclick="toggleDropdown('layers-toggle-content-container')">Layer</button>
-        <button id="imageButton" onclick="toggleDropdown('image-toggle-content-container')">Image</button>
-        <button id="colorsButton" onclick="toggleDropdown('colors-toggle-content-container')">Colors</button>
-        <button id="helpButton" onclick="toggleDropdown('toggle-content-container')">Help</button>
+        <button class="menubar-btn" id="fileButton" onclick="toggleDropdown('toggle-content-container', 'fileButton')">File</button>
+        <button class="menubar-btn" id="editButton" onclick="toggleDropdown('edit-toggle-content-container', 'editButton')">Edit</button>
+        <button class="menubar-btn" id="viewButton" onclick="toggleDropdown('view-toggle-content-container', 'viewButton')">View</button>
+        <button class="menubar-btn" id="layerButton" onclick="toggleDropdown('layers-toggle-content-container', 'layerButton')">Layer</button>
+        <button class="menubar-btn" id="imageButton" onclick="toggleDropdown('image-toggle-content-container', 'imageButton')">Image</button>
+        <button class="menubar-btn" id="colorsButton" onclick="toggleDropdown('colors-toggle-content-container', 'colorsButton')">Colors</button>
+        <button class="menubar-btn" id="helpButton" onclick="toggleDropdown('toggle-content-container', 'helpButton')">Help</button>
     </div>
     <div class="toggle-content-container" id="file_toggle" style="display: none; width: 275px;height: 310px;left: 0;">
         <table class="toggle-content" style="width: 275px;height: 305px;left: 0; ">
@@ -462,7 +462,7 @@
         <div class="extra"></div>
     
 </div>
-    <script src="/FrontEnd/src/scripts/main.js"></script>
+    <script defer src="/FrontEnd/src/scripts/main.js"></script>
 
 
 </body>
