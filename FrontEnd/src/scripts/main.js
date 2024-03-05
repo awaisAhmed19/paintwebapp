@@ -1,14 +1,18 @@
-const menubutton=document.querySelector('.menubar-btn');
+const menubtnList = document.querySelectorAll('.menubar-btn');
 
-menubutton.addEventListener('click',()=>{
-    menubutton.classList.add(".menubar button:focus")
-});
+menubtnList.forEach((menubtn) => {
+    menubtn.addEventListener('click', () => {
+        const isFocused = menubtn.classList.contains('.menubar-btn.focus');
 
-
-const menubtnList=document.querySelectorAll('.menubar-btn');
-menubtnList.forEach((menubtn)=>{
-    menubtn.addEventListener('click',()=>{
-        document.querySelector('.menubar button:focus')?.classList.remove('.menubar button:focus');
-        menubtn.classList.add('.menubar button:focus');
+        if (isFocused) {
+            menubtn.classList.remove('focus');
+        } else {
+            const focusedButton = document.querySelector('.menubar-btn.focus');
+            if (focusedButton) {
+                focusedButton.classList.remove('.menubar-btn.focus');
+            }
+            menubtn.classList.add('.menubar-btn.focus');
+        }
     });
 });
+
